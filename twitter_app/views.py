@@ -4,10 +4,10 @@ from requests_oauthlib import OAuth1
 import json
 
 def index(request):
-    consumer_key="FhldcDcUvxTc5sMgGX4ZiPnmu"
-    consumer_secret="skdRnITjxu8tXleSfbjeu153sZZ0OKQyZ2qvinYRNDH7PWiPD7"
-    access_token="3255927978-LHMCwq262HY7T474kTSmSFHfsCPR4Ct5sNXPHUA"
-    access_token_secret="EbEUetFFEiPV4sPQOEqTKg8awAIp8XbDJYo82SbfN9meH"
+    consumer_key="XXXXXXXXX" #replace with your consumer key
+    consumer_secret="XXXXXXXXX" # replace with your consumer secret
+    access_token="XXXXXXXXXXXX" # replace with your access token
+    access_token_secret="XXXXXXXXXXX" # replace with your access token secret
     if request.method == 'POST':
         twitter_handle = request.POST.get('screen_name')
         count = request.POST.get('count')
